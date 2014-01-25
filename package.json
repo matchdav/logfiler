@@ -1,0 +1,31 @@
+{
+  "name": "logfiler",
+  "version": "0.0.1",
+  "description": "Write logfiles to local directory.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matchdav/logfiler"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "logging"
+  ],
+  "author": {
+    "name": "Matthew Davidson"
+  },
+  "license": "MIT",
+  "readme": "This is a basic logger.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/matchdav/logfiler/issues"
+  },
+  "homepage": "https://github.com/matchdav/logfiler",
+  "_id": "logfiler@0.0.1",
+  "_from": "logfiler@"
+}
