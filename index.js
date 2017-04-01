@@ -1,17 +1,22 @@
-var fs= require('fs'), append=fs.appendFileSync
-, path=require('path'), util = require('util');
+var fs= require('fs'), 
+	append=fs.appendFileSync, 
+	path=require('path'), 
+	util = require('util');
 
 
 var base = "";
+
 function fname(){
 	return (new Date(Date.now())).getTime()+".log";
 }
+
 var filename = fname();
+
 function toArray(obj){
 	return Array.prototype.slice.call(obj);
 }
 
-function coglog(){
+function log(){
 	var localpath = path.join(base,filename);
 	var now = new Date(Date.now());
 	var args = toArray(arguments);
@@ -21,9 +26,9 @@ function coglog(){
 	return append(localpath,"");
 }
 
-exports = module.exports = coglog;
+module.exports = log;
 
-coglog.path = function(dir){
+log.path = function(dir){
 	if(dir){
 		base = path.resolve(__dirname,dir);
 		filename = fname();
